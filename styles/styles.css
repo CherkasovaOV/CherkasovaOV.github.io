@@ -1,0 +1,47 @@
+.tinp, button {
+	background-color: #7e89ed;
+	color: #0f0f0f;
+}
+
+button {
+	margin-top: 45px;
+	margin-left: 100px;
+	border-radius: 5px;
+}
+
+.main_form {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	/*width: 80%;
+	max-width: 600px;*/
+}
+
+.table_header {
+	font-size: 25px; /* Используйте px, а не просто число */
+	padding: 15px;  /* Добавьте отступы внутри ячейки */
+	text-align: center;  	
+}
+
+table {
+	margin: 0 auto;
+}
+
+/*
+td {
+	margin-top: 15px;
+	border: 3px solid;
+	border-color: red;	
+}
+*/
+
+* {
+	text-align: left;
+	font-family: sans-serif;
+	font-size: 20;
+	background-color: #000a66;
+	color: #c9cdf5;
+	justify-content: center;
+}
+
+
