@@ -1,0 +1,129 @@
+<!-- 
+/* 1. Составьте форму-анкету (используя метод POST), включающую в себя следующие поля:
+Фамилия
+Имя
+Логин
+Пароль
+Выбор предмета (выпадающий SELECT, не менее 4)
+Выбор времени (с помощью radio, не менее 4)
+Форма контроля (с помощью checkbox: тест, собеседование, доклад, контрольная работа)
+Дополнительная информация (TEXTAREA)
+Кнопка для отправки данных.
+2. Оформить анкету с помощью CSS, например, как на рисунке (для следующей темы):*
+-->
+
+<!DOCTYPE html5>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Анкета чемпиона</title>
+		<link rel="stylesheet" type="text/css" href="../styles/form_styles.css">
+	</head>
+	<body>
+		<main class="main_form">
+			<form class="form" method="POST">
+		<table >
+			<thead>
+			<th class="table_header">Опрос для чемпионов</th>
+			</thead>
+			<tbody>
+			<tr class="table_row">
+				<td class="question">
+					<p>Имя</p>
+				</td>
+				<td class="answer">
+					<input type=text class="tinp"></input>
+				</td>
+			</tr>
+			<tr class="table_row">
+				<td  class="question">
+					<p>Фамилия</p>
+				</td>
+				<td class="answer">
+					<input type=text class="tinp"></input>
+				</td>
+			</tr class="table_row">
+			<tr>
+				<td  class="question">
+					<p>Логин</p>
+				</td>
+				<td class="answer">
+					<input type=text class="tinp"></input>
+				</td>
+			</tr class="table_row">
+			<tr>
+				<td  class="question">
+					<p>Пароль</p>
+				</td>
+				<td class="answer">
+					<input type=text class="tinp"></input>
+				</td>
+			</tr>
+			<tr class="table_row">
+				<td  class="question">
+					<p>Предмет</p>
+				</td>
+				<td class="answer" class="tinp">
+					<select>
+						<option>Мяч</option>
+						<option>Велосипед</option>
+						<option>Плед</option>
+						<option>Плюшевый слон</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="table_row">
+				<td  class="question">
+					<p>Время</p>
+				</td>
+				<td class="answer">
+					<form class="time_selection">
+						<input type=radio name=times>
+							<label>Past simple</label>
+						</input>
+						<input type=radio name=times>
+							<label>Present perfect</label>
+						</input>
+						<br>
+						<input type=radio name=times>
+							<label>Present simple</label>
+						</input>
+						<input type=radio name=times>
+							<label>Future (any)</label>
+						</input>
+					</form>
+				</td>
+			</tr>
+			<tr class="table_row">
+				<td  class="question">
+					<p>Форма контроля</p>
+				</td>
+				<td class="answer">
+					<input type=checkbox>
+						<label>Подавление</label>
+					</input>
+					<br>
+					<input type=checkbox>
+						<label>Запугивание</label>
+					</input>
+					<br>
+					<input type=checkbox>
+						<label>Подкуп</label>
+					</input>
+				</td>
+			</tr>
+			<tr class="table_row">
+				<td  class="question">
+					<p>Дополнительная информация</p>
+				</td>
+				<td class="answer">
+					<input type=textarea class="tinp"/>
+				</td>
+			</tr>
+		</tbody>
+		</table>
+		<button>Отправить донос</button>
+	</form>
+		</main>
+	</body>
+</html>
