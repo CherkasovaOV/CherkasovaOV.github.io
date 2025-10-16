@@ -22,8 +22,16 @@ button {
 	padding: 15px;
 }
 
+.menu {
+	margin-left: 30px;
+	color: #20405e;
+}
+
 a {
 	color: black;
 	background-color: #485afa;
 	text-decoration: none;
 }
+
+
+
