@@ -1,0 +1,63 @@
+.hidden {
+	display: none;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+	background:#689CD2;
+	color: white;
+}
+
+input{
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 5px 0 #003CC5;
+	color: blue;
+}
+
+fieldset {
+	border-radius: 10px;
+}
+
+.fieldhead {
+	font-size: 24px; 
+}
+
+form {
+	display: flex;
+	justify-content: center;
+}
+
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.btn-new {
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background: #0B63F6;
+    box-shadow: 0 5px 0 #003CC5;
+    height: 40px;
+    width: 130px;
+}
+
+.btn-new:hover {
+    background: #003CC5;
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}

@@ -1,0 +1,65 @@
+<!-- Имя (должны быть указаны полностью фамилия, имя и отчество), 
+Контактный телефон,
+Адрес электронной почты, 
+Список с секциями конференции (математика, физика, информатика)
+Дата рождения
+Доклад (переключатель), 
+если есть доклад – то отображается поле для ввода темы. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Лучшая конференция</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend  class="fieldhead">Регистрация участников</legend>
+			<p>
+				<input type="text" name="parti_form" id="name">
+				<label for="name">ФИО</label>
+			</p>
+			<p>
+				<input type="tel" name="parti_form" id="phone">
+				<label for="phone">Контактный номер</label>
+			</p>
+			<p>
+				<input type="email" name="parti_form" id="email">
+				<label for="phone">E-mail</label>
+			</p>
+			<p>
+				<input list="sections" name="parti_form" id="section">
+				<label for="section">Секция</label>
+				<datalist id="sections">
+					<option value="Математика"/>
+					<option value="Физика"/>
+					<option value="Информатика"/>
+				</datalist>
+			</p>
+			<p>
+				<input type="date" name="parti_form" id="birthday" value="2000-01-01">
+				<label for="birthday">Дата рождения</label>
+			</p>
+			<p>
+				<input type="checkbox" name="parti_form" id="report_req">
+				<label for="report_req">Планируется доклад</label>
+			</p>
+			<p id="report_topic_container"  class="hidden">
+				<input type="text" name="parti_form" id="report_topic" placeholder="Введите тему доклада">
+			</p>
+			<div class="buttons">
+				<p>
+					<input type="reset" name="reset" value="Очистить форму" id='reset_button' class="button btn-new">
+				</p>
+				<p>
+					<input type="button" name="submit" value="Отправить" id="submit_button" class="button btn-new">
+				</p>
+		</fieldset>
+	</form>
+<script src="scrt/script.js" type="text/javascript"></script>
+</body>
+</html> 
