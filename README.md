@@ -1,2 +1,2 @@
-# CherOV.github.io
+# CherkasovaOV.github.io
 Итоговое задание Веб-технологии
