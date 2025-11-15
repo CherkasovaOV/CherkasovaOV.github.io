@@ -144,7 +144,7 @@ input:focus {
 .form_result {
 	justify-content: flex-start;
 	flex-direction: column;
-	border-radius: 10px;
+	width: 600px;
 }
 
 .form_result > div {
@@ -196,8 +196,7 @@ input:focus {
 
 .participants_table_body > div {
 	display: flex;
-	border-bottom: solid 1px white;
-	margin-bottom: 5px;
+	margin-bottom: 25px;
 }
 
 .participants_table_body > div > p {
@@ -206,13 +205,19 @@ input:focus {
 
 .participants_table_body > div > p:nth-child(1){
 	flex: 1;
+	padding-left: 15px;
+	border-left: solid 1px white;
 }
 
 .participants_table_body > div > p:nth-child(2){
 	flex: 1;
+	padding-left: 15px;
+	border-left: solid 1px white;
 }
 
 .participants_table_body > div > p:nth-child(3){
 	flex: 2;
+	padding-left: 15px;
+	border-left: solid 1px white;
 }
 
